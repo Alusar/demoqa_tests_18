@@ -24,7 +24,7 @@ public class DemoqaTest {
         $(".react-datepicker__month-container").$(byText("13")).click();
         $("#subjectsInput").setValue("English").pressEnter();
         $("#hobbies-checkbox-3").parent().$(byText("Music")).click();
-        $("#uploadPicture").uploadFromClasspath("pictures/14.png");
+        $("#uploadPicture").uploadFromClasspath("java/resources/picture/14.png");
         $("#currentAddress").setValue("Victory cq 5");
         $("#state").click();
         $("#stateCity-wrapper").$(byText("Uttar Pradesh")).click();
