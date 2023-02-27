@@ -10,12 +10,17 @@ dependencies {
     testImplementation (
             "com.codeborne:selenide:6.11.2",
             "org.junit.jupiter:junit-jupiter:5.9.2")
+    // https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j
+    implementation 'org.slf4j:log4j-over-slf4j:2.0.6'
+
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
 test {
     useJUnitPlatform()
 }
+
+
