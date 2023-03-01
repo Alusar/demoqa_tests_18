@@ -32,6 +32,7 @@ public class DemoqaTest {
         $(".react-datepicker__month-container").$(byText("13")).click();
         $("#subjectsInput").setValue("English").pressEnter();
         $("#hobbies-checkbox-2").parent().$(byText("Reading")).click();
+        $("#uploadPicture").uploadFromClasspath("pictures/14.jpg");
         $("#currentAddress").setValue("Perumov");
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
